@@ -1,303 +1,256 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/bc607b3e78.js" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-    <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">    </script>
 
-    <title></title>
-  </head>
-  <body>
-    <div class="section" style="">
-      <nav>
-        <a href="#" class="logo"><img src="img/shopLogo.png"></a>
-        <ul class="menu">
-          <!-- <li><a href="#" class="active">Home</a></li> -->
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#Car-shop">Cars</a></li>
-          <li><a href="#contactme">Contact</a></li>
-          <li><a href="#footerid">About Us</a></li>
-        </ul>
-      </nav>
-    </div><br>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/bc607b3e78.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">    </script>
+
+  <title></title>
+</head>
+
+<body>
+  <div class="section" style="">
+    <nav>
+      <div class="logo">
+        <a href="#" class="logo"><img src="img/shopLogo.png" height="50"></a>
+        <p class="logoFont">BLUE BIRD</p>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#Car-shop">Registration</a></li>
+        <li><a href="#contactme">Search</a></li>
+        <li><a href="#contactme">Advertisement</a></li>
+        <li><a href="#footerid">About Us</a></li>
+        <li><a href="#Car-shop">Login</a></li>
+      </ul>
+    </nav>
+  </div><br>
 
   <!-------------------------------------------
           Slider Begins.
   --------------------------------------------->
 
-    <section class="section">
+  <section class="section">
+    <div class="homePage">
+      <div class="image">
+        <img src="img/slider4.jpg" style="">
+      </div>
+      <div class="intro">
+        <h1>Introduction</h1>
+        <p>An online marketplace where dealers and private sellers can offer their vehicles to potential customers is a car selling website. These websites often include a large selection of available cars, trucks, and SUVs, as well as a number of tools and features to assist buyers in finding and acquiring the ideal vehicle. This includes tools for searching and filtering, thorough automobile listings, financing choices, and contact channels for connecting buyers and sellers. When it comes to purchasing and selling vehicles, car selling websites are a practical and effective way for buyers and sellers to conduct business.</p>
+      </div>
+    </div>
+    <br>
+  </section>
+  <hr style="border: 4px solid rgb(98, 118, 157);background-color:rgb(98, 118, 157);">
+  <!-- shop from here -->
+  <div id="Car-shop"
+    style="color:black; text-align:center; border-radius:5px;color:rgb(98, 118, 157); font-family:fantasy;">
+    <h1> Exclusive Online Car Sale</h1>
+  </div>
+  <p
+    style="text-align: center; font-style: italic; color: black; padding: 0px; margin-top:-20px; margin-bottom: -20px;">
+    "The cars we drive say a lot about us."</p>
 
-  <div class="slideshow-container">
+  <!-- shop from here -->
+  <div class="container">
+    <div class="card-content" style=" ">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/8.jpg" alt="Car1" style="width:100%">
+        </div>
+        <div class="card-info">
 
-    <div class="mySlides fade">
-      <img src="img/slider6.jpg" style="width:100%">
+          <p>
+            <font color="black">Birthday Car calories don't count</font>
+          </p>
+          <p class="price" style="color:black;">$ 8750</p>
+
+          <p><button class="open-button" onclick="openForm()">Buy</button></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="images/1.jpg" alt="Car1" style="width:100%">
+        </div>
+        <div class="card-info">
+
+          <p>
+            <font color="black">A slice of my life is but a piece of Car.</font>
+          </p>
+          <p class="price" style="color:black;">$ 8500</p>
+
+          <p><button class="open-button" onclick="openForm()">Buy</button></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="images/2.jpg" alt="Car1" style="width:100%">
+        </div>
+        <div class="card-info">
+
+          <p>
+            <font color="black">Bakers make the world smell better.</font>
+          </p>
+          <p class="price" style="color:black;">$ 10000</p>
+
+          <p><button class="open-button" onclick="openForm()">Buy</button></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image">
+          <img src="images/3.jpg" alt="Car1" style="width:100%">
+        </div>
+        <div class="card-info">
+          <p>
+            <font color="black">Don’t wait until it’s too late. </font>
+          </p>
+          <p class="price" style="color:black;">Rs.3500</p>
+
+          <p><button class="open-button" onclick="openForm()">Buy</button></p>
+        </div>
+      </div>
     </div>
 
-    <div class="mySlides fade">
-      <img src="img/slider4.jpg" style="width:100%">
-    </div>
+    <!-- From for Cart   -->
+    <div class="form-popup" id="myForm">
+      <!-- we have code to validate using js but for ease we use required.onsubmit="script.js" -->
+      <form action="action.php" class="form-container" onsubmit="Validate()" method="post">
+        <h1 style="color:brown; font-weight:bold;">Car Order</h1>
 
-    <div class="mySlides fade">
-      <img src="img/slider5.jpg" style="width:100%">
+        <label for="name"><b>Name</b></label>
+        <input id="name" type="text" placeholder="Enter Name" name="name" required>
+
+        <label for="email"><b>Email</b></label>
+        <input id="email " type="text" placeholder="Enter Email" name="email" required>
+
+        <label><b>Phone No.</b></label>
+        <input id="phone" type="text" placeholder="Enter Phone no." name="phone" required>
+
+
+        <label for="text"><b>Address</b></label>
+        <input id="email" type="text" placeholder="Enter Your Address" name="address" required>
+
+        <label for="date"><b>Ordered Date</b></label>
+        <input id="date" type="date" name="orderdate" required><br><br>
+
+        <label for="email" style="font-weight:bold;">Flavour</label>
+        <select name="flavor">
+          <option value="Chocolate">Chocolate</option>
+          <option value="Strawberry">Strawberry</option>
+          <option value="Venilla">Vanilla</option>
+          <option value="Cheese">Cheese</option>
+        </select>
+        <label for="psw"><b>Weight</b></label>
+        <input type="number" name="weight" required min="1" max="5" style="border: 1px solid black;">
+        <br><br>
+
+        <button type="submit" class="btn" style="font-weight:bold;"> Place Order</button>
+        <button type="button" class="btn cancel" onclick="closeForm()" style=" font-weight:bold;">Close</button>
+      </form>
     </div>
+    <!-- End form for cart. -->
 
   </div>
-  <br>
 
-  <div style="text-align:center">
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-  </div>
+  <div id="contactme">
 
-    </section>
-    <hr style="border: 4px solid rgb(98, 118, 157);background-color:rgb(98, 118, 157);">
-    <!-- shop from here -->
-    <div id="Car-shop" style="color:black; text-align:center; border-radius:5px;color:rgb(98, 118, 157); font-family:fantasy;">
-      <h1> Exclusive Online Car Sale</h1>  
+
+    <div class="contact-container">
+      <div class="item1">
+        <h3>Contact Me.</h3>
+        <em>
+          <p>Feel Free to Contact Us.</p>
+        </em>
+      </div>
+      <div class="item2">
+        <form action="submit.php" method="POST" onsubmit="return validateForm()">
+          <div class="form-group">
+            <input type="text" name="name" class="forms" placeholder="Enter Your Name">
+          </div>
+          <div class="form-group">
+            <input type="text" name="email" class="forms" placeholder="Enter Your Email">
+          </div>
+          <div class="form-group">
+            <input type="text" name="contact" class="forms" placeholder="Enter Your Contact Number">
+          </div>
+          <div class="form-group">
+            <input type="text" name="address" class="forms" placeholder="Enter Your Address">
+          </div>
+
+
+      </div>
+      <div class="item3">
+        <div class="form-group">
+          <textarea name="message" id="message" class="form-control"
+            placeholder="Plese Enter Your Message Here !"></textarea>
+        </div>
+      </div>
+
+      <div class="item4">
+        <div class="button">
+          <button id="sendMessageButton" class="btn btn-dark" type="submit">Send Message</button>
+        </div>
+
+      </div>
+      </form>
     </div>
-    <p style="text-align: center; font-style: italic; color: black; padding: 0px; margin-top:-20px; margin-bottom: -20px;">"The cars we drive say a lot about us."</p>
-
-<!-- shop from here -->
-<div class="container">
-  <div class="card-content" style=" ">
-    <div class="card">
-      <div class="card-image">
-      <img src="images/8.jpg" alt="Car1" style="width:100%">
-      </div>
-      <div class="card-info">
-        
-        <p><font color="black">Birthday Car calories don't count</font></p>
-        <p class="price" style="color:black;">$ 8750</p>
-        
-        <p><button  class="open-button" onclick="openForm()" >Buy</button></p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-image">
-      <img src="images/1.jpg" alt="Car1" style="width:100%">
-      </div>
-      <div class="card-info">
-       
-        <p><font color="black">A slice of my life is but a piece of Car.</font></p>
-        <p class="price" style="color:black;">$ 8500</p>
-        
-        <p><button  class="open-button" onclick="openForm()" >Buy</button></p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-image">
-      <img src="images/2.jpg" alt="Car1" style="width:100%">
-      </div>
-      <div class="card-info">
-        
-        <p><font color="black">Bakers make the world smell better.</font></p>
-        <p class="price" style="color:black;">$ 10000</p>
-        
-        <p><button  class="open-button" onclick="openForm()" >Buy</button></p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-image">
-      <img src="images/3.jpg" alt="Car1" style="width:100%">
-      </div>
-      <div class="card-info">
-        <p><font color="black">Don’t wait until it’s too late. </font></p>
-        <p class="price" style="color:black;">Rs.3500</p>
-       
-        <p><button  class="open-button" onclick="openForm()" >Buy</button></p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-image">
-      <img src="images/4.jpg" alt="Car1" style="width:100%">
-      </div>
-      <div class="card-info">
-        <p><font color="black">Happiness starts here.</font></p>
-        <p class="price" style="color:black;">$10000</p>
-        
-        <p><button  class="open-button" onclick="openForm()" >Buy</button></p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-image">
-      <img src="images/5.jpg" alt="Car1" style="width:100%">
-      </div>
-      <div class="card-info">
-        <p><font color="black">Eat that slice of Car!</font></p>
-        <p class="price" style="color:black;">$ 10000</p>
-        
-        <p><button  class="open-button" onclick="openForm()" >Buy</button></p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-image">
-      <img src="images/6.jpg" alt="Car1" style="width:100%">
-      </div>
-      <div class="card-info">
-        <p><font color="black">Let's face it, a nice creamy chocolate.</font></p>
-        <p class="price" style="color:black;">$ 6900</p>
-        
-        <p><button  class="open-button" onclick="openForm()" >Buy</button></p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-image">
-      <img src="images/7.jpg" alt="Car1" style="width:100%">
-      </div>
-      <div class="card-info">
-        <p><font color="black">A bite of deliciousness.</font></p>
-        <p class="price" style="color:black;">$ 6900</p>
-        
-        <p><button  class="open-button" onclick="openForm()" >Buy</button></p>
-      </div>
-    </div>
-  </div>
-
-<!-- From for Cart   -->
-<div class="form-popup" id="myForm">
-  <!-- we have code to validate using js but for ease we use required.onsubmit="script.js" -->
-  <form action="action.php"  class="form-container" onsubmit="Validate()"  method="post">
-    <h1 style="color:brown; font-weight:bold;">Car Order</h1>
-
-    <label for="name"><b>Name</b></label>
-    <input id="name" type="text" placeholder="Enter Name" name="name" required>
-
-    <label for="email"><b>Email</b></label>
-    <input id="email "type="text" placeholder="Enter Email" name="email" required>
-
-    <label ><b>Phone No.</b></label>
-    <input id="phone" type="text" placeholder="Enter Phone no." name="phone" required>
-
-
-    <label for="text"><b>Address</b></label>
-    <input id="email" type="text" placeholder="Enter Your Address" name="address" required>
-
-    <label for="date"><b>Ordered Date</b></label>
-    <input id="date" type="date" name="orderdate" required><br><br>
-
-    <label for="email" style="font-weight:bold;">Flavour</label>
-    <select  name="flavor">
-  <option value="Chocolate">Chocolate</option>
-  <option value="Strawberry">Strawberry</option>
-  <option value="Venilla">Vanilla</option>
-  <option value="Cheese">Cheese</option>
-</select>
-<label for="psw"><b>Weight</b></label>
-<input type="number"  name="weight" required min="1" max="5" style="border: 1px solid black;">
-<br><br>
-
-    <button type="submit" class="btn" style="font-weight:bold;"> Place Order</button>
-    <button type="button" class="btn cancel" onclick="closeForm()"style=" font-weight:bold;">Close</button>
-  </form>
-</div>
-<!-- End form for cart. -->
-
-
-<!-- pagination -->
-  <div class="pagination">
-    <li class="page-item previous-page disable"> <a class="page-link" href='index4.html'>Prev</a></li>
-    <li class="page-item current-page active"> <a class="page-link" href='index.html'>1</a></li>
-    <!-- <li class="page-item dots"> <a class="page-link" href='#'>...</a></li> -->
-    <li class="page-item current-page "> <a class="page-link" href='index2.html'>2</a></li>
-<li class="page-item current-page"> <a class="page-link" href='index3.html'>3</a></li>
-<!-- <li class="page-item dots"> <a class="page-link" href='#'>...</a></li> -->
-<li class="page-item current-page"> <a class="page-link" href='index4.html'>4</a></li>
-
-    <li class="page-item next-page"> <a class="page-link" href='index.html'>Next</a></li>
-
-  </div>
-</div>
-
-<div id="contactme">
-
-
-	<div class="contact-container">
-		<div class="item1">
-			<h3>Contact Me.</h3>
-		<em><p>Feel Free to Contact Us.</p></em>
-		</div>
-		<div class="item2">
-			<form action="submit.php" method="POST" onsubmit="return validateForm()">
-				<div class="form-group">
-					<input type="text" name="name" class="forms" placeholder="Enter Your Name">
-				</div>
-				<div class="form-group">
-					<input type="text" name="email" class="forms" placeholder="Enter Your Email">
-				</div>
-				<div class="form-group">
-					<input type="text" name="contact" class="forms" placeholder="Enter Your Contact Number">
-				</div>
-				<div class="form-group">
-					<input type="text" name="address" class="forms" placeholder="Enter Your Address">
-				</div>
-
-
-		</div>
-		<div class="item3">
-			<div class="form-group">
-								<textarea name="message" id="message" class="form-control" placeholder="Plese Enter Your Message Here !"></textarea>
-							</div>
-		</div>
-
-		<div class="item4">
-			<div class="button">
-							<button id="sendMessageButton" class="btn btn-dark" type="submit">Send Message</button>
-						</div>
-
-		</div>
-			</form>
-	</div>
   </div>
 
 
 
-	<!-------------------------------------------
+  <!-------------------------------------------
 			Contact Form Ends.
 --------------------------------------------->
 
 
-	<!-------------------------------------------
+  <!-------------------------------------------
 			  Footer Begins.
 --------------------------------------------->
 
-<div id="footerid">
+  <div id="footerid">
 
 
-		<div class="footer-container">
-			<div class="footer1">
-				<h3>About us.</h3>
-				<p>Welcome to our car buying and selling company! We are a team of dedicated professionals who are passionate about providing exceptional service to our clients.</p>
+    <div class="footer-container">
+      <div class="footer1">
+        <h3>About us.</h3>
+        <p>Welcome to our car buying and selling company! We are a team of dedicated professionals who are passionate
+          about providing exceptional service to our clients.</p>
 
-                 <p>At our company, we strive to make the car buying and selling process as smooth and stress-free as possible. Our goal is to help our clients find the perfect car that meets their needs and budget, and to provide a hassle-free experience when it comes to selling their vehicles.
-</p><p> We have a wide selection of cars available for purchase, ranging from practical family cars to luxurious sports cars. Our team of experts can help you find the car that suits your needs and provide you with all the information you need to make an informed decision.</p>
-                
-			</div>
+        <p>At our company, we strive to make the car buying and selling process as smooth and stress-free as possible.
+          Our goal is to help our clients find the perfect car that meets their needs and budget, and to provide a
+          hassle-free experience when it comes to selling their vehicles.
+        </p>
+        <p> We have a wide selection of cars available for purchase, ranging from practical family cars to luxurious
+          sports cars. Our team of experts can help you find the car that suits your needs and provide you with all the
+          information you need to make an informed decision.</p>
 
-			<div class="footer2">
-				<h3>Connect With Us.</h3>
-				&emsp;<i class="fa-solid fa-phone"></i> &emsp; 9824111452<br>
-				&emsp;<i class="fa-solid fa-envelope"></i> &emsp; info@bakeryCar.com<br><br>
-				<p><b>Delivery Hours:</b><br>
-                   Monday—Friday: 09:00AM–08:00PM<br>
-                   Saturday, Sunday & Holidays: 10:00AM–01:00PM
-                </p> &emsp; &emsp;
-				<a href="#" class="logo"><img src="img/shopLogo.png" height="100px" width="400px"></a><br>
+      </div>
 
-			</div>
+      <div class="footer2">
+        <h3>Connect With Us.</h3>
+        &emsp;<i class="fa-solid fa-phone"></i> &emsp; 9824111452<br>
+        &emsp;<i class="fa-solid fa-envelope"></i> &emsp; info@bakeryCar.com<br><br>
+        <p><b>Delivery Hours:</b><br>
+          Monday—Friday: 09:00AM–08:00PM<br>
+          Saturday, Sunday & Holidays: 10:00AM–01:00PM
+        </p> &emsp; &emsp;
+        <a href="#" class="logo"><img src="img/shopLogo.png" height="100px" width="400px"></a><br>
 
-			<div class="footer3">
-				<h3>Krishan Aryal</h3>
-		 <h4>CEO Blue Bird Car Buying and Selling</h4>
-				<!-- <p>Mr. Samir <br> Mr. Binayak <br> Mr. Keshab</p>  -->
-			</div>
+      </div>
 
-			<div class="footer4">
-				<p><b>All Right Reserved. &copy; 2023 || <a> Blue Bird Car Buying and Selling  </a></b></p>
-			</div>
+      <div class="footer3">
+        <h3>Krishan Aryal</h3>
+        <h4>CEO Blue Bird Car Buying and Selling</h4>
+        <!-- <p>Mr. Samir <br> Mr. Binayak <br> Mr. Keshab</p>  -->
+      </div>
+
+      <div class="footer4">
+        <p><b>All Right Reserved. &copy; 2023 || <a> Blue Bird Car Buying and Selling </a></b></p>
+      </div>
       <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
 
 
@@ -306,7 +259,7 @@
         var mybutton = document.getElementById("myBtn");
 
         // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
+        window.onscroll = function () { scrollFunction() };
 
         function scrollFunction() {
           if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -321,117 +274,41 @@
           document.body.scrollTop = 0;
           document.documentElement.scrollTop = 0;
         }
-        </script>
-		</div>
+      </script>
     </div>
+  </div>
 
-<script type="text/javascript">
-function Validate(){
-  var name = document.getElementById("name");
-  var email = document.getElementById("email");
-  var phone = document.getElementById("phone");
-  var address = document.getElementById("address");
+  <script type="text/javascript">
+    function Validate() {
+      var name = document.getElementById("name");
+      var email = document.getElementById("email");
+      var phone = document.getElementById("phone");
+      var address = document.getElementById("address");
 
 
-  if(name.value.trim() == "" || email.value.trim() == "" ||phone.value.trim() == "" ||address.value.trim() == "" )
-    {
-      alert(" Username and Password Field can't be empty");
-      return false;
+      if (name.value.trim() == "" || email.value.trim() == "" || phone.value.trim() == "" || address.value.trim() == "") {
+        alert(" Username and Password Field can't be empty");
+        return false;
+      }
+      else {
+        return true;
+      }
     }
-    else  {
-      return true;
+
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
     }
-}
 
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-// function getPageList(totalPages, page, maxLength){
-//   function range(start, end){
-//     return Array.from(Array(end - start + 1),( _ , i )=> i + start);
-//   }
-//   var sideWidth = maxLength < 9 ? 1 : 2;
-//   var leftWidth =(maxLength - sideWidth* 2- 3)>> 1;
-//   var rightWidth =(maxLength - sideWidth* 2- 3)>> 1;
-//
-//   if(totalPages<= maxLength){
-//     return range(1, totalPages);
-//   }
-//   if(page <= maxLength - sideWidth - 1 - rightWidth){
-//     return range(1, maxLength - sideWidth - 1).concat(0, range(totalPages - sideWidth + 1,totalPages));
-//   }
-//   if(page => totalPages - sideWidth -1- rightWidth){
-//     return range(1, sideWidth).concat(0, range(totalPages-sideWidth - 1 - rightWidth- leftWidth,totalPages));
-//   }
-//   return range( 1, sideWidth).concat(0, range(page-leftWidth,page+ rightWidth),0,range(totalPages-sideWidth + 1,totalPages));
-// }
-// $(function(){
-//   var numberOfItems = $(".card-content .card").length;
-//   var numberOfItems = 8; // how many you want to show in one page
-//   var totalPages= Math.ceil(numberOfItems/numberOfItems);
-//   var paginationSize =7;
-//   var  currentPage;
-//
-//
-// function showPage(whichPage){
-//   if(whichPage < 1|| whichPage> totalPages) return false;
-//   currentPage = whichPage;
-//
-//   $(".card-content .card").hide().slice((currentPage-1)* limitPerPage, currentPage * limitPerPage).show();
-//   $(".pagination li ").slice(1, -1).remove();
-//   getPageList(totalPages, currentPage, paginationSize).forEach(item =>{
-//    $("<li>").addClass("Page-item").addClass(item ? "current-Page": "dots")
-//    .toggleClass("active", item === currentPage).append($("<a>").addClass("page-link")
-//  .attr({href:"javascript:void(0)"}).text(item || "...")).insertBefore(".next-page");
-//   });
-//
-//
-//   $(".previous-page").toggleClass("disable", currentPage === 1);
-//   $(".next_page").toggleClass("disable", currentPage === totalPages);
-//   return true;
-//
-// }
-// $(".pagination").append(
-//   $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link").attr({href:"javascript:void(0)"}).text("Prev")),
-//   $("<li>").addClass("page-item").addClass("next-page").append($("<a>").addClass("page-link").attr({href:"javascript:void(0)"}).text("Next")),
-// );
-//  $(".card-content").show();
-//  showPage(1);
-//
-//  $(document).on("click", ".pagination li .current-page:not(.active)", function(){
-//    return showPage(+$(this).text());
-//  });
-//
-// });
-
-
-</script>
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
 
 
 
-  </body>
+  </script>
+
+
+
+</body>
+
 </html>
