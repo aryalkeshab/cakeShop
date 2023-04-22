@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/search.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <div class="logo">
+                <a href="index.html" class="logo"><img src="img/shopLogo.png" height="50"></a>
+                <p class="logoFont">BLUE BIRD</p>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="search.html" class="active">Search</a></li>
+                <li><a href="advertise.html">Advertisement</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div><br><br><br>
+    <div class="mainBody" style="background-image: url('img/car1.png');">
+        <div class="overlay">
+            <h1 class="hidden">Test</h1><br><br><br><br>
+            <div class="search">
+                <form action="">
+                    <h1>Search the car you want</h1>
+                    <div class="form-group">
+                        <label for="">Model:</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Location:</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group submit">
+                        <button>Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="cars">
+        <hr style="border: 4px solid rgb(98, 118, 157);background-color:rgb(98, 118, 157);">
+        <!-- shop from here -->
+        <div id="Car-shop"
+            style="color:black; text-align:center; border-radius:5px;color:rgb(98, 118, 157); font-family:fantasy;">
+            <h1> Exclusive Online Car Sale</h1>
+        </div>
+        <p
+            style="text-align: center; font-style: italic; color: black; padding: 0px; margin-top:-20px; margin-bottom: -20px;">
+            "The cars we drive say a lot about us."</p>
+
+        <!-- shop from here -->
+        <div class="container">
+            <div class="card-content" style=" ">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/8.jpg" alt="Car1" style="width:100%">
+                    </div>
+                    <div class="card-info">
+
+                        <p>
+                            <font color="black">Birthday Car calories don't count</font>
+                        </p>
+                        <p class="price" style="color:black;">$ 8750</p>
+
+                        <p><button class="open-button" onclick="openForm()">Buy</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/1.jpg" alt="Car1" style="width:100%">
+                    </div>
+                    <div class="card-info">
+
+                        <p>
+                            <font color="black">A slice of my life is but a piece of Car.</font>
+                        </p>
+                        <p class="price" style="color:black;">$ 8500</p>
+
+                        <p><button class="open-button" onclick="openForm()">Buy</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/2.jpg" alt="Car1" style="width:100%">
+                    </div>
+                    <div class="card-info">
+
+                        <p>
+                            <font color="black">Bakers make the world smell better.</font>
+                        </p>
+                        <p class="price" style="color:black;">$ 10000</p>
+
+                        <p><button class="open-button" onclick="openForm()">Buy</button></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/3.jpg" alt="Car1" style="width:100%">
+                    </div>
+                    <div class="card-info">
+                        <p>
+                            <font color="black">Don’t wait until it’s too late. </font>
+                        </p>
+                        <p class="price" style="color:black;">Rs.3500</p>
+
+                        <p><button class="open-button" onclick="openForm()">Buy</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- From for Cart   -->
+            <div class="form-popup" id="myForm">
+                <!-- we have code to validate using js but for ease we use required.onsubmit="script.js" -->
+                <form action="action.php" class="form-container" onsubmit="Validate()" method="post">
+                    <h1 style="color:brown; font-weight:bold;">Car Order</h1>
+
+                    <label for="name"><b>Name</b></label>
+                    <input id="name" type="text" placeholder="Enter Name" name="name" required>
+
+                    <label for="email"><b>Email</b></label>
+                    <input id="email " type="text" placeholder="Enter Email" name="email" required>
+
+                    <label><b>Phone No.</b></label>
+                    <input id="phone" type="text" placeholder="Enter Phone no." name="phone" required>
+
+
+                    <label for="text"><b>Address</b></label>
+                    <input id="email" type="text" placeholder="Enter Your Address" name="address" required>
+
+                    <label for="date"><b>Ordered Date</b></label>
+                    <input id="date" type="date" name="orderdate" required><br><br>
+
+                    <label for="email" style="font-weight:bold;">Flavour</label>
+                    <select name="flavor">
+                        <option value="Chocolate">Chocolate</option>
+                        <option value="Strawberry">Strawberry</option>
+                        <option value="Venilla">Vanilla</option>
+                        <option value="Cheese">Cheese</option>
+                    </select>
+                    <label for="psw"><b>Weight</b></label>
+                    <input type="number" name="weight" required min="1" max="5" style="border: 1px solid black;">
+                    <br><br>
+
+                    <button type="submit" class="btn" style="font-weight:bold;"> Place Order</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()"
+                        style=" font-weight:bold;">Close</button>
+                </form>
+            </div>
+            <!-- End form for cart. -->
+
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    </div>
+    </div>
+
+    <script type="text/javascript">
+        function Validate() {
+            var name = document.getElementById("name");
+            var email = document.getElementById("email");
+            var phone = document.getElementById("phone");
+            var address = document.getElementById("address");
+
+
+            if (name.value.trim() == "" || email.value.trim() == "" || phone.value.trim() == "" || address.value.trim() == "") {
+                alert(" Username and Password Field can't be empty");
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

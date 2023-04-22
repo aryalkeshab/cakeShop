@@ -1,0 +1,48 @@
+body{
+    background-color: lightgray;
+}
+.mainBody{
+    width: 50%;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    box-shadow: 2px 2px 20px black;
+}
+
+.mainBody h1{
+    text-align: center !important;
+}
+
+.form-group{
+    padding: 10px;
+}
+
+.form-group label{
+    font-weight: bold;
+}
+
+.form-group input{
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.submit button{
+    border: none;
+    margin-top: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    background-color: gray;
+}
+
+.submit button:hover{
+    background-color: lightblue;
+    color: black;
+}

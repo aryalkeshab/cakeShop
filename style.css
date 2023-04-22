@@ -1,8 +1,10 @@
 /*--------------
       NAV BAR
 ----------------*/
-.section{
-  margin-bottom: 10px;
+.header{
+  margin: -8px;
+  position: fixed;
+  width: 100%;
 }
 
 a {
@@ -12,14 +14,6 @@ a {
 
 ul {
   list-style: none;
-}
-
-input,
-button,
-textarea {
-  border: none;
-  outline: none;
-
 }
 
 nav {
@@ -230,7 +224,7 @@ nav ul li a:hover {
   padding: 15px;
 }
 
-button {
+.item4 button {
   background-color: rgb(153, 162, 222);
   padding: 10px;
   border: 1px solid black;
@@ -238,7 +232,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.item4 button:hover {
   background-color: brown;
   color: white;
   box-shadow: 5px 8px 20px rgba(95, 88, 88, 0.76);
@@ -348,7 +342,6 @@ button:hover {
 }
 
 .card {
-  position: relative;
   background: #fff;
   border: 2px solid rgb(153, 162, 222);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -409,11 +402,6 @@ button:hover {
   text-decoration: none;
   font-size: 1.2em;
   line-height: 45px;
-
-}
-
-.active {
-  background: #0AB1CE;
 
 }
 
