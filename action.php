@@ -2,8 +2,8 @@
 $servername ="localhost";
 $username ="root";
 $password ="";
-$dbname ="cakeform";
-$tablename="cakeorder";
+$dbname ="Carform";
+$tablename="Carorder";
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
   $name=$_POST['name'];
@@ -18,7 +18,7 @@ $conn =mysqli_connect($servername,$username,$password )or die(mysql_error());
 
 mysqli_select_db($conn,$dbname)or die("Cannot connect to database");
 
-$query="INSERT INTO `cakeorder`(`name`, `email`, `phone`, `address`, `orderdate`, `flavour`, `weight`) VALUES('$name','$email','$phone','$address','$orderdate','$flavor','$weight')";
+$query="INSERT INTO `Carorder`(`name`, `email`, `phone`, `address`, `orderdate`, `flavour`, `weight`) VALUES('$name','$email','$phone','$address','$orderdate','$flavor','$weight')";
 // echo $query;
 mysqli_query($conn,$query);
 

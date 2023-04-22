@@ -17,9 +17,9 @@ input,button,textarea{
 
 }
 nav{
-	background-color: lightpink;
-	box-shadow: 5px 8px 20px rgba(252,0,0,0.76);
-	border: 1px solid red;
+	background-color:  rgb(153, 162, 222);
+	box-shadow: 5px 8px 20px rgba(96, 88, 88, 0.76);
+	border: 1px solid rgb(169, 176, 103);
 	display: flex;
 	float: right;
 	justify-content: space-around;
@@ -47,14 +47,14 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-	background-color: lightpink;
+	background-color:  rgb(153, 162, 222);
 	color:white;
-	box-shadow: 5px 8px 20px rgba(252,0,0,0.76);
+	box-shadow: 5px 8px 20px rgba(109, 96, 96, 0.76);
 }
 .active{
-	background-color:lightpink;
+	background-color: rgb(153, 162, 222);
 	color:white;
-	box-shadow: 5px 8px 20px rgba(252,0,0,0.76);
+	box-shadow: 5px 8px 20px rgba(111, 97, 97, 0.76);
 
 }
 
@@ -153,7 +153,7 @@ img {vertical-align: middle;}*/
 	display: grid;
 	grid-template-columns: auto auto auto;
 	border: 1px solid #ededed;
-	box-shadow: 5px 8px 20px rgba(252,0,0,0.76);
+	box-shadow: 5px 8px 20px rgba(113, 96, 96, 0.76);
 	/* box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1); */
 	background-color: #f2f3f5;
 	padding: 40px 30px;
@@ -172,7 +172,7 @@ img {vertical-align: middle;}*/
 }
 
 .contact-container .forms{
-	background-color: lightpink;
+	background-color: rgb(153, 162, 222);
 	margin-bottom: 30px;
 	border: 1px solid black;
 	box-sizing: border-box;
@@ -183,11 +183,11 @@ img {vertical-align: middle;}*/
 	resize: none;
 	width: 100%;
 	border-radius: 10px;
-	box-shadow: 5px 8px 20px rgba(182, 98, 98, 0.76);
+	box-shadow: 5px 8px 20px rgba(95, 88, 88, 0.76);
 }
 
 .contact-container textarea {
-	background-color: lightpink;
+	background-color:  rgb(153, 162, 222);
 	padding: 20px 25px !important;
 	height: 310px !important;
 	width: 100%;
@@ -197,7 +197,7 @@ img {vertical-align: middle;}*/
 	box-sizing: border-box;
 	border: 1px solid black;
 	border-radius: 10px;
-	box-shadow: 5px 8px 20px rgba(182, 98, 98, 0.76);
+	box-shadow: 5px 8px 20px rgba(95, 88, 88, 0.76);
 }
 
 
@@ -225,7 +225,7 @@ img {vertical-align: middle;}*/
 }
 
 button{
-	background-color: lightpink;
+	background-color:  rgb(153, 162, 222);
 	padding: 10px;
 	border: 1px solid black;
 	border-radius: 9px;
@@ -235,7 +235,7 @@ button{
 button:hover{
 	background-color: brown;
 	color: white;
-	box-shadow: 5px 8px 20px rgba(182, 98, 98, 0.76);
+	box-shadow: 5px 8px 20px rgba(95, 88, 88, 0.76);
 
 }
 
@@ -253,9 +253,9 @@ button:hover{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	border: 1px solid #ededed;
-	background-color: lightpink;
+	background-color:  rgb(153, 162, 222);
 	padding-top: 50px;
-	box-shadow: 5px 8px 20px rgba(252,0,0,0.76);
+	box-shadow: 5px 8px 20px rgba(90, 80, 80, 0.76);
 	justify-items: center;
 
 
@@ -326,11 +326,11 @@ button:hover{
   margin: 30px;
 }
 .card button {
-  border:1px solid lightpink ;
+  border:1px solid  rgb(153, 162, 222) ;
   outline: 0;
   padding: 12px;
   color: Black;
-  background-color: lightpink;
+  background-color:  rgb(153, 162, 222);
   /* text-align: center; */
   cursor: pointer;
   width: 100%;
@@ -349,7 +349,7 @@ button:hover{
 .card {
   position: relative;
   background: #fff;
-  border:2px solid lightpink ;
+  border:2px solid  rgb(153, 162, 222) ;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   margin: auto;
@@ -474,7 +474,7 @@ button:hover{
   z-index: 99;
   font-size: 18px;
   outline: none;
-  background-color: pink;
+  background-color: rgb(98, 118, 157);
   color: black;
   cursor: pointer;
   padding: 8px 12px 8px 12px;

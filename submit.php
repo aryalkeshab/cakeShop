@@ -2,7 +2,7 @@
 $servername= "localhost";
 $username= "root";
 $password= "";
-$dbname= "cakeform";
+$dbname= "Carform";
 $tablename= "contact";
 
 if($_SERVER["REQUEST_METHOD"]=="POST"){
