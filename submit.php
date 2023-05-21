@@ -23,5 +23,5 @@ mysqli_select_db($conn, $dbname) or die("Cannot connect to database");          
 mysqli_query($conn,"INSERT INTO contact(name, email, contact, address, message) VALUES('$name', '$email', '$contact', '$address', '$message')");
 print'<script>alert("Congrats! Your Submission is Successfully Registered!");</script>';
 
-header("Location: index.html");
+header("Location: index.php");
 ?>

@@ -1,13 +1,14 @@
 body{
     background-color: lightgray;
 }
-.mainBody{
-    width: 50%;
+.registerForm {
+    width: 30%;
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 150px;
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10px;
     background-color: white;
     box-shadow: 2px 2px 20px black;
 }

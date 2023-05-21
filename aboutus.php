@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/aboutus.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Page</title>
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <div class="logo">
+                <a href="index.php" class="logo"><img src="img/shopLogo.png" height="50"></a>
+                <p class="logoFont">BLUE BIRD</p>
+            </div>
+            <ul class="menu">
+                <li><a href="index.php">Home</a></li>
+                <!-- <li><a href="registration.html" class="active">Registration</a></li> -->
+                <li><a href="search.php">Search</a></li>
+                <li><a href="advertise.php">Advertisement</a></li>
+                <li><a href="aboutus.php">About Us</a></li>
+                <?php
+                session_start();
+                if (isset($_SESSION['username'])) {
+
+                ?>
+                    <li><a href="logout.php">Logout</a></li>
+
+
+                <?php
+                    echo "Welcome " . $_SESSION['username'];
+                } else {
+                ?>
+                    <li><a href="login.php">Login</a></li>
+                <?php
+
+                    echo "Welcome Guest";
+                }
+                ?>
+            </ul>
+        </nav>
+    </div><br><br><br><br>
+    <div class="mainBody">
+        <h1>About Us</h1>
+        <p>Welcome to our car buying and selling company! We are a team of dedicated professionals who are passionate
+            about providing exceptional service to our clients. <br>
+            At our company, we strive to make the car buying and selling process as smooth and stress-free as possible.
+            Our goal is to help our clients find the perfect car that meets their needs and budget, and to provide a
+            hassle-free experience when it comes to selling their vehicles. <br>
+            We have a wide selection of cars available for purchase, ranging from practical family cars to luxurious
+            sports cars. Our team of experts can help you find the car that suits your needs and provide you with all
+            the information you need to make an informed decision.
+        </p>
+    </div>
+
+</body>
+
+</html>
